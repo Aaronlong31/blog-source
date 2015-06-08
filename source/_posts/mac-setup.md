@@ -15,6 +15,7 @@ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
 安装后，需要运行`brew update`和`brew doctor`。
 使用方式：`brew install wget`.
+
 ## [Homebrew Cask](http://caskroom.io/)
 homebrew的扩展，可以安装有图形化界面的软件。安装很简单：`brew install caskroom/cask/brew-cask`。
 用它安装软件也很简单，`brew cask install xxx`就好，介绍几个好用的：
@@ -54,6 +55,9 @@ brew cask install qlcolorcode
 brew cask install sourcetree
 
 ```
+
+## the_silver_searcher
+安装方式：`brew install the_silver_searcher`，文件内容搜索神器，谁用谁知道。
 
 ## [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)  
 zsh是命令行环境bash的一种替代选择，oh-my-zsh对zsh做了很多扩展，有很多插件和主题，比如git插件能直接显示当前的分支和状态，如下图：
@@ -143,5 +147,14 @@ Near Lock 可以配合 iPhone 实现自动解锁、上锁 Mac。Near Lock 的使
 - 选择主题为Pro，好看！
 - 可以闪动光标，不然容易找不到光标在哪；
 - 打开键盘tab，勾选`使用Option键作为Meta键`，这样就可以使用`alt + .`这样的操作了！
+
+## Java
+JDK1.7及以上都可以到oracle的官网下载，JDK1.6需要到苹果的[官网](http://supportdownload.apple.com/download.info.apple.com/Apple_Support_Area/Apple_Software_Updates/Mac_OS_X/downloads/031-03190.20140529.Pp3r4/JavaForOSX2014-001.dmg)下载。
+下载后配置JAVA_HOME，修改~/.profile，加入以下代码：
+```shell
+# 如果想换成JDK1.7就写1.7，前提是你要先安装；1.6和1.7的安装路径很不一样，这样写切换时就方便多了。
+export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
+export PATH=$JAVA_HOME/bin:$PATH
+```
 
 还有其他的工具，以后慢慢补充。
