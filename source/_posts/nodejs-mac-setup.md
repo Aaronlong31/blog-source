@@ -12,12 +12,12 @@ categories:
 
 ## 配置
 ###方式一：
-```shell
+```
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 
 ###方式二：
-```shell
+```
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
 --cache=$HOME/.npm/.cache/cnpm \
 --disturl=https://npm.taobao.org/dist \
@@ -25,11 +25,11 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 ```
 
 ##安装npm模块
-```shell
+```
 cnpm install [name]
 ```
 
 ##同步模块
-```shell
+```
 cnpm sync connect
 ```

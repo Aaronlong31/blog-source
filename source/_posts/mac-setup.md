@@ -9,7 +9,7 @@ categories:
 ## [Homebrew](https://github.com/robbyrussell/oh-my-zsh)  
 Mac下必备的软件安装工具，类似于Ubuntu下的apt-get。安装方式：
 
-```shell
+```
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 ```
 
@@ -20,7 +20,7 @@ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 homebrew的扩展，可以安装有图形化界面的软件。安装很简单：`brew install caskroom/cask/brew-cask`。
 用它安装软件也很简单，`brew cask install xxx`就好，介绍几个好用的：
 
-```shell
+```
 # 预览插件，可以在Finder中按空格直接预览文件
 brew cask install qlcolorcode
 brew cask install qlstephen
@@ -113,7 +113,7 @@ import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330
 - darkula主题，Idea IntellIj的主题，黑酷。
 
 如果要在命令行中使用，还需要执行以下命令：
-```shell
+```
 ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 ```
 用`subl --help`查看使用方式。
@@ -151,7 +151,7 @@ Near Lock 可以配合 iPhone 实现自动解锁、上锁 Mac。Near Lock 的使
 ## Java
 JDK1.7及以上都可以到oracle的官网下载，JDK1.6需要到苹果的[官网](http://supportdownload.apple.com/download.info.apple.com/Apple_Support_Area/Apple_Software_Updates/Mac_OS_X/downloads/031-03190.20140529.Pp3r4/JavaForOSX2014-001.dmg)下载。
 下载后配置JAVA_HOME，修改~/.profile，加入以下代码：
-```shell
+```
 # 如果想换成JDK1.7就写1.7，前提是你要先安装；1.6和1.7的安装路径很不一样，这样写切换时就方便多了。
 export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
 export PATH=$JAVA_HOME/bin:$PATH
