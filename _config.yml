@@ -80,6 +80,6 @@ subnav:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:Aaronlong31/blog.git
+  repo: git@github.com:Aaronlong31/aaronlong31.github.io.git
   branch: gh-pages
   message: deploy from hexo
