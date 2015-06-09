@@ -81,5 +81,5 @@ subnav:
 deploy:
   type: git
   repo: git@github.com:Aaronlong31/aaronlong31.github.io.git
-  branch: gh-pages
+  branch: master
   message: deploy from hexo
